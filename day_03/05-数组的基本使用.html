@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 字面量声明数组
+        let array_01 = [1, 2, 3, 4]
+
+        // 使用new Array 构造函数声明数组
+        let array_02 = new Array(1, 2, 3, 4)
+        console.log(array_02);
+
+        // push -> 将一个或多个元素添加到数组的末尾并返回该数组的新长度
+        array_01.push(5, 6, 7, 8, 9)
+        document.write(array_01 + '<br>')
+
+        // unshift -> 将一个或多个元素添加到数组的开头并返回数组的长度
+        array_02.unshift(0)
+        document.write(array_02 + '<br>')
+
+        // pop -> 从数组中删除最后一个元素并返回该元素的值
+        array_01.pop()
+        document.write(array_01 + '<br>')
+
+        // shift -> 从数组中删除第一个元素并返回该元素的值
+        array_02.shift()
+        document.write(array_02 + '<br>')
+
+        // splice -> 从数组中删除指定的元素
+        array_01.splice(0, 2) // 从0开始删除两个元素
+        document.write(array_01 + '<br>')
+    </script>
+</body>
+
+</html>
