@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 使用表单、prompt获取的数据默认是字符串类型 -> 需要转换类型才能进行数学运算
+
+        // 隐式转换
+        console.log('MELANCHOLY' + 100)
+        console.log(2 + '2')
+        console.log(2 - '2')
+        console.log(+12)
+        console.log(+'123');
+
+        // 显式转换
+        let str = '123'
+        console.log(Number(str));
+        console.log(Number('MELANCHOLY'))
+
+        let salary = prompt('请输入您的年薪')
+        console.log(Number(salary))
+        let age = Number(prompt('请输入您的年龄'))
+        console.log(age)
+
+        console.log(parseInt('12.34px')) // 只保留整数
+        console.log(parseFloat('12.34px')) // 可以保留小数
+    </script>
+</body>
+
+</html>
