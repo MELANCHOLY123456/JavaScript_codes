@@ -9,7 +9,22 @@
 
 <body>
     <script>
+        function getRandom(N, M) {
+            return Math.floor(Math.random() * (M - N + 1) + N);
+        }
 
+        let random = getRandom(1, 10);
+        while (true) {
+            let num = Number(prompt('请输入一个数字'))
+            if (num > random) {
+                alert('您猜大了')
+            } else if (num < random) {
+                alert('您猜小了')
+            } else {
+                alert('恭喜您，猜对了~')
+                break
+            }
+        }
     </script>
 </body>
 
