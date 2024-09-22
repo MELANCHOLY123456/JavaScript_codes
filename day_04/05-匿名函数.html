@@ -8,11 +8,12 @@
 </head>
 
 <body>
+    <button>点击我</button>
     <script>
-        let fn = function () {
-            console.log('我是函数表达式~');
+        let btn = document.querySelector('button')
+        btn.onclick = function () {
+            alert('我是匿名函数~');
         }
-        fn()
     </script>
 </body>
 
