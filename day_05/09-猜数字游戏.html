@@ -15,7 +15,21 @@
 
         let random = getRandom(1, 10);
 
-        while (true) {
+        // while (true) {
+        //     let num = Number(prompt('请输入一个数字'))
+        //     if (num > random) {
+        //         alert('您猜大了')
+        //     } else if (num < random) {
+        //         alert('您猜小了')
+        //     } else {
+        //         alert('恭喜您，猜对了~')
+        //         break
+        //     }
+        // }
+
+        // 设定次数
+        let flag = true
+        for (let i = 1; i <= 5; i++) {
             let num = Number(prompt('请输入一个数字'))
             if (num > random) {
                 alert('您猜大了')
@@ -23,8 +37,12 @@
                 alert('您猜小了')
             } else {
                 alert('恭喜您，猜对了~')
+                flag = false
                 break
             }
+        }
+        if (flag) {
+            alert('次数已经用完了~')
         }
     </script>
 </body>
