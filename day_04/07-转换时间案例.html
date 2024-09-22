@@ -17,9 +17,10 @@
             hour = hour < 10 ? '0' + hour : hour
             minute = minute < 10 ? '0' + minute : minute
             second = second < 10 ? '0' + second : second;
-            alert(`${hour}时${minute}分${second}秒`)
+            return (`${hour}时${minute}分${second}秒`)
         }
-        getTime(time)
+        let ans = getTime(time)
+        document.write(ans)
     </script>
 </body>
 
