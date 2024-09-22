@@ -15,10 +15,13 @@
         let random = Math.floor(Math.random() * array.length);
         console.log(array[random]);
         // 随机生成N~M之间的整数
+
+        function getRandom(N, M) {
+            return Math.floor(Math.random() * (M - N + 1) + N);
+        }
         let N = 5;
         let M = 10;
-        console.log(Math.floor(Math.random() * (M - N + 1) + N));
-
+        console.log(getRandom(N, M));
     </script>
 </body>
 
