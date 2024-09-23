@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">123</div>
+    <div class="box">abc</div>
+    <p id="nav">导航栏</p>
+    <ul>
+        <li>测试</li>
+        <li>中国</li>
+        <li>完整</li>
+    </ul>
+    <script>
+        // 获取匹配的第一个元素
+        const box = document.querySelector('div')
+        console.log(box);
+        const nav = document.querySelector('p')
+        // 对象属性更改
+        nav.style.color = 'red'
+        console.log(nav);
+        // 获取第一个li
+        const li = document.querySelector('ul li:first-child')
+        console.log(li);
+        // 获取所有的li -> 只能通过遍历的方式一次给里面的元素做修改
+        const li_all = document.querySelectorAll('ul li')
+        console.log(li_all);
+    </script>
+</body>
+
+</html>
