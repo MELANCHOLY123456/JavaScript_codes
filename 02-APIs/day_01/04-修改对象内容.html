@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box">文字内容</div>
+    <script>
+        // innerText属性将文本内容添加/更新到任意标签位置
+        // 只显示纯文本，不解析标签
+        const box = document.querySelector('.box')
+        box.innerText = 'MELANCHOLY'
+        console.log(box.innerText);
+        // innerHTML属性将文本内容添加/更新到任意标签位置
+        // 会解析标签，多标签建议使用模板字符
+        box.innerHTML = '<strong>眸冷但骨不累</strong>'
+        console.log(box.innerHTML);
+    </script>
+</body>
+
+</html>
